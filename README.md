@@ -1,3 +1,3 @@
-# css-animation-demo
+# styled-inputs-demo
 
 Hijacking HTML labels and inputs with BEM CSS to create interactive light sabers. 
