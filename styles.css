@@ -13,6 +13,8 @@ body {
 
 .lightsaber {
   position: relative;
+  color: #fff;
+  margin-right: 30px;
 }
 
 .lightsaber input[type='checkbox'] {
@@ -27,12 +29,19 @@ body {
   border-bottom: solid 4px grey;
   border-top: solid 4px grey;
   border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(226, 226, 226, 1) 0%,
+    rgb(219, 219, 219, 1) 50%,
+    rgb(209, 209, 209, 1) 51%,
+    rgb(254, 254, 254, 1) 100%
+  );
 }
 
 .lightsaber .laser {
   cursor: pointer;
   position: absolute;
-  background: greenyellow;
+  background: #fff;
   bottom: 66px;
   left: 3px;
   border-radius: 12px 12px 0 0;
@@ -44,4 +53,40 @@ body {
 
 .lightsaber input[type='checkbox']:checked ~ .laser {
   height: 250px;
+}
+
+.lightsaber--yoda .laser {
+  background: rgb(135, 220, 90);
+  background: linear-gradient(
+    to right,
+    rgb(135, 220, 90) 0%,
+    rgb(254, 254, 254) 30%,
+    rgb(254, 254, 254) 50%,
+    rgb(254, 254, 254) 70%,
+    rgb(135, 220, 90) 100%
+  );
+}
+
+.lightsaber--vader .laser {
+  background: rgb(229, 17, 21);
+  background: linear-gradient(
+    to right,
+    rgba(229, 17, 21, 1) 0%,
+    rgba(254, 254, 254, 1) 30%,
+    rgba(254, 254, 254, 1) 47%,
+    rgba(254, 254, 254, 1) 71%,
+    rgba(229, 17, 21, 1) 100%
+  );
+}
+
+.lightsaber--windu .laser {
+  background: rgb(202, 116, 221);
+  background: linear-gradient(
+    to right,
+    rgba(202, 116, 221, 1) 0%,
+    rgba(254, 254, 254, 1) 30%,
+    rgba(254, 254, 254, 1) 47%,
+    rgba(254, 254, 254, 1) 71%,
+    rgba(202, 116, 221, 1) 100%
+  );
 }
