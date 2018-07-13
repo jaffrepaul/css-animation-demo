@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
   min-height: 100vh;
   background: #111;
 }
@@ -16,4 +17,25 @@ body {
 
 .lightsaber input[type='checkbox'] {
   opacity: 0;
+}
+
+.lightsaber label {
+  display: block;
+  height: 50px;
+  width: 15px;
+  background: #ddd;
+  border-bottom: solid 4px grey;
+  border-top: solid 4px grey;
+  border-radius: 5px;
+}
+
+.lightsaber .laser {
+  position: absolute;
+  background: greenyellow;
+  bottom: 64px;
+  left: 3px;
+  border-radius: 12px 12px 0 0;
+  height: 250px;
+  width: 10px;
+  filter: blur(1px);
 }
