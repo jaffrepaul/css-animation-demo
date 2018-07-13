@@ -30,6 +30,7 @@ body {
 }
 
 .lightsaber .laser {
+  cursor: pointer;
   position: absolute;
   background: greenyellow;
   bottom: 66px;
@@ -38,6 +39,7 @@ body {
   height: 0;
   width: 10px;
   filter: blur(1px);
+  transition: 0.3s height;
 }
 
 .lightsaber input[type='checkbox']:checked ~ .laser {
