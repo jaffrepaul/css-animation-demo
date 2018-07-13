@@ -9,3 +9,11 @@ body {
   min-height: 100vh;
   background: #111;
 }
+
+.lightsaber {
+  position: relative;
+}
+
+.lightsaber input[type='checkbox'] {
+  opacity: 0;
+}
