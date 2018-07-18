@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 250px;
+  padding-top: 20em;
   min-height: 100vh;
   background: #111;
 }
@@ -20,7 +20,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
   z-index: 2;
   cursor: pointer;
 }
@@ -29,16 +29,17 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 50px;
+  font-size: 1.5em;
   color: white;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .lightsaber {
   position: relative;
   color: #fff;
-  margin-right: 30px;
+  margin-right: 4em;
 }
 
 .lightsaber input[type='checkbox'] {
@@ -48,8 +49,8 @@ body {
 .lightsaber label {
   cursor: pointer;
   display: block;
-  height: 50px;
-  width: 20px;
+  height: 3.1em;
+  width: 1.29em;
   background: #ddd;
   border-bottom: solid 4px grey;
   border-top: solid 4px grey;
@@ -67,17 +68,17 @@ body {
   cursor: pointer;
   position: absolute;
   background: #fff;
-  bottom: 67px;
-  left: 2.5px;
+  bottom: 4.2em;
+  left: 0.16em;
   border-radius: 12px 12px 0 0;
   height: 0;
-  width: 15px;
+  width: 1em;
   filter: blur(1px);
   transition: 0.3s height;
 }
 
 .lightsaber input[type='checkbox']:checked ~ .laser {
-  height: 350px;
+  height: 20em;
 }
 
 .lightsaber--yoda .laser {

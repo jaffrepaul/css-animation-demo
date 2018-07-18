@@ -5,6 +5,7 @@ window.onload = () => {
 
 const overlayOff = () => {
   document.getElementById('overlay').style.display = 'none';
+  document.getElementById('onboard-text').style.display = 'none';
 };
 
 const lightsabers = document.querySelectorAll(
