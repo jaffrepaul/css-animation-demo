@@ -1,9 +1,19 @@
+// display onboarding overlay when page loads
+window.onload = () => {
+  document.getElementById('overlay').style.display = 'block';
+};
+
+const overlayOff = () => {
+  document.getElementById('overlay').style.display = 'none';
+};
+
 const lightsabers = document.querySelectorAll(
   '.lightsaber input[type="checkbox"]'
 );
+
 lightsabers.forEach(saber => saber.addEventListener('change', playAudio));
 
-function playAudio(e) {
+const playAudio = e => {
   // first check to see if this checkbox is on or off
   const isOn = e.target.checked;
   if (isOn) {
@@ -11,14 +21,4 @@ function playAudio(e) {
     whooshSound.src = 'lightsaber.wav';
     whooshSound.play();
   }
-}
-
-document.addEventListener('DOMContentLoaded', function(event) {});
-
-function on() {
-  document.getElementById('overlay').style.display = 'block';
-}
-
-function off() {
-  document.getElementById('overlay').style.display = 'none';
-}
+};
