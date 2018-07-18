@@ -13,6 +13,8 @@ function playAudio(e) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function(event) {});
+
 function on() {
   document.getElementById('overlay').style.display = 'block';
 }
