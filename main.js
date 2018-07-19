@@ -12,9 +12,7 @@ const lightsabers = document.querySelectorAll(
   '.lightsaber input[type="checkbox"]'
 );
 
-lightsabers.forEach(saber => saber.addEventListener('change', playAudio));
-
-const playAudio = e => {
+let playAudio = e => {
   // first check to see if this checkbox is on or off
   const isOn = e.target.checked;
   if (isOn) {
@@ -23,3 +21,5 @@ const playAudio = e => {
     whooshSound.play();
   }
 };
+
+lightsabers.forEach(saber => saber.addEventListener('change', playAudio));
